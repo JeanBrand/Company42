@@ -1,0 +1,379 @@
+html body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+::selection
+{
+    background-color:Transparent;
+}
+
+#indexWrapper #divMainContent
+{
+    background-color: #FFF;
+    height: 889px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 875px;
+    padding: 5% 5%;
+}
+
+#indexWrapper #divWhoWeAreContent
+{
+    background-color: #cccccc;
+    background-image: url("../resources/images/16.jpg");
+    background-repeat: no-repeat;
+    height: 889px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 1665px;
+    padding: 6% 46%;
+}
+
+#indexWrapper #divWhatWeOfferContent
+{
+    background-color: #FFF;
+    height: 889px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 2335px;
+    padding: 5% 5%;
+}
+
+#indexWrapper #divContactContent
+{
+    background-color: #191D22;
+    height: 889px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 3065px;
+    box-sizing: border-box;
+}
+
+.navigateItemsNormal
+{
+    color:#FFF;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+.navigateItemsNormal:hover
+{
+    color:#8BC34A;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+.navigateItemsInMenu
+{
+    color:#8a959e;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+}
+
+.navigateItemsInMenu:hover
+{
+    color:#8BC34A;
+}
+
+#divFaceContainer
+{
+    position: absolute;
+    left: 35%;
+    top: -65px;
+}
+
+.face
+{
+    border-radius: 15px;
+    position: absolute;
+}
+
+#face1
+{
+    top: 628px;
+    right: 974px;
+}
+
+#face3
+{
+    left: 150px;
+}
+
+#face4
+{
+    left: 299px;
+}
+
+#face5
+{
+    left: 448px;
+}
+
+#face1Test
+{
+    color: #A09DAD;
+    position: absolute;
+    width: 500px;
+    right: 446px;
+    top: 644px;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+#indexWrapper #image1
+{
+    background-image: url("../resources/images/mainContentImage.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 838px;
+    position: absolute;
+    top: 137px;
+}
+
+#image2
+{
+    height: 500px;
+    width:960px;
+}
+
+#image3
+{
+    height: 500px;
+    width:960px;
+}
+
+#divMainContentHeader
+{
+    color: #000;
+    position: absolute;
+    width: 837px;
+    font-size: 46px;
+    font-weight: 100;
+    line-height: 1.5;
+    right: 258px;
+    top: 122px;
+}
+
+#divMainContentText
+{
+    color: #A09DAD;
+    position: absolute;
+    width: 837px;
+    right: 253px;
+    top: 308px;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+#divWhoWeAreHeader
+{
+    color: #939DA5;
+    position: absolute;
+    width: 837px;
+    font-size: 46px;
+    font-weight: 100;
+    line-height: 2;
+    left: 80px;
+}
+
+#divWhoWeAreContentText
+{
+    color: #FFF;
+    position: absolute;
+    width: 837px;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 2;
+    left: 80px;
+    top: 230px;
+}
+
+#divContactform
+{
+    width: 450px;
+    position: absolute;
+    height: 500px;
+    left: 38.5%;
+    top: 250px;
+}
+
+input
+{
+    background-color: transparent;
+    color: #FFF;
+    font-family: 'Open Sans', open-sans, sans-serif;
+    border-radius: 3px;
+    border: 1px solid #4E575F;
+    height: 50px;
+    width: 450px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    box-sizing: border-box;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 35px;
+
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+#btnContactUs
+{
+    border-radius: 6px;
+    color: #FFF;
+    cursor: pointer;
+    height: 50px;
+    width: 450px;
+    text-align: center;
+    line-height: 51px;
+    background-color: #8BC34A;
+    font-size: 16px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+#btnContactUs:hover
+{
+    background-color: #689F38;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.divContactUsNavButton
+{
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.divContactUsNavButton:hover
+{
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+#divContactContentHeader
+{
+    color: #FFF;
+    font-size: 30px;
+    left: 21%;
+    top: 117px;
+    position: absolute;
+}
+
+#divContactContentSubHeader
+{
+    color: #8B959C;
+    font-size: 21px;
+    left: 35%;
+    top: 170px;
+    position: absolute;
+}
+
+@media all and (max-width: 340px) {
+    #image1
+    {
+        height: 250px;
+        width: 415px;
+        position: absolute;
+        top: 137px;
+        right: 0px;
+    }
+
+    #divMainContentHeader
+    {
+        width: 319px;
+        font-size: 28px;
+        right: 9px;
+        top: 8px;
+    }
+
+    #divMainContentText
+    {
+        width: 273px;
+        right: 51px;
+        top: 455px;
+        font-size: 19px;
+    }
+
+    #divWhoWeAreHeader
+    {
+        font-size: 28px;
+        left: 33px;
+    }
+
+    #divWhoWeAreContentText
+    {
+        width: 258px;
+        font-size: 19px;
+        left: 33px;
+        top: 169px;
+    }
+
+    .face
+    {
+        display: none;
+    }
+
+    #divContactContentHeader
+    {
+        font-size: 21px;
+        left: 15%;
+        top: 45px;
+        width: 245px;
+    }
+
+    #divContactContentSubHeader
+    {
+        font-size: 21px;
+        left: 15%;
+        top: 150px;
+        width: 245px;
+    }
+
+    #divContactform
+    {
+        left: 15%;
+    }
+
+    input
+    {
+        width: 240px;
+    }
+
+    #btnContactUs
+    {
+        width: 245px;
+    }
+}
+
+
