@@ -16,20 +16,32 @@ var advert = (function()
     var picture2 = document.createElement("img");
 
     var divImgContainer = document.createElement("div");
+    divImgContainer.className = "divImageContainer";
+
     var imgWordpress = document.createElement("img");
+    imgWordpress.className = "footerImages";
     var divWordPressTitle = document.createElement("div");
+    divWordPressTitle.className = "footerTitles";
 
     var imgHTML5 = document.createElement("img");
+    imgHTML5.className = "footerImages";
     var divHTML5Title = document.createElement("div");
+    divHTML5Title.className = "footerTitles";
 
     var imgCSS3 = document.createElement("img");
+    imgCSS3.className = "footerImages";
     var divCSS3Title = document.createElement("div");
+    divCSS3Title.className = "footerTitles";
 
     var imgJavascript = document.createElement("img");
+    imgJavascript.className = "footerImages";
     var divJavascriptTitle = document.createElement("div");
+    divJavascriptTitle.className = "footerTitles";
 
     var imgJQuery = document.createElement("img");
+    imgJQuery.className = "footerImages";
     var divJQueryTitle = document.createElement("div");
+    divJQueryTitle.className = "footerTitles";
 
     var adImages = true;
 
@@ -78,10 +90,10 @@ var advert = (function()
         adFooter.style.cssText = "box-sizing: border-box;background-color: #F9F9FA;height: 100px;width: 100%;position: absolute;top: 775px;";
         wrapper.appendChild(adFooter);
 
-        divImgContainer.style.cssText = "position: absolute;left: 50%;margin-left: -417px;margin-top: -42.5;width: 834px;height: 85px;top: 9%;";
+        divImgContainer.style.cssText = "position: absolute;left: 50%;margin-top: -42.5;width: 834px;height: 85px;top: 9%;";
         adFooter.appendChild(divImgContainer);
 
-        imgWordpress.style.cssText = "height: 85px;width: 85px;float; left; margin-right: 158px;";
+        imgWordpress.style.cssText = "height: 85px;width: 85px;float; left;";
         imgWordpress.src = "resources/images/wp.png";
         divImgContainer.appendChild(imgWordpress);
 
@@ -89,7 +101,7 @@ var advert = (function()
         divWordPressTitle.innerHTML = "WORDPRESS";
         divImgContainer.appendChild(divWordPressTitle);
 
-        imgHTML5.style.cssText = "height: 85px;width: 60px;float; left; margin-right: 89px;";
+        imgHTML5.style.cssText = "height: 85px;width: 60px;float; left;";
         imgHTML5.src = "resources/images/html5_2.png";
         divImgContainer.appendChild(imgHTML5);
 
@@ -97,7 +109,7 @@ var advert = (function()
         divHTML5Title.innerHTML = "HTML5";
         divImgContainer.appendChild(divHTML5Title);
 
-        imgCSS3.style.cssText = "height: 85px;width: 60px;float; left; margin-right: 79px;";
+        imgCSS3.style.cssText = "height: 85px;width: 60px;float; left; ";
         imgCSS3.src = "resources/images/css3_2.png";
         divImgContainer.appendChild(imgCSS3);
 
@@ -105,7 +117,7 @@ var advert = (function()
         divCSS3Title.innerHTML = "CSS3";
         divImgContainer.appendChild(divCSS3Title);
 
-        imgJavascript.style.cssText = "height: 85px;width: 60px;float; left; margin-right: 158px;";
+        imgJavascript.style.cssText = "height: 85px;width: 60px;float; left; ";
         imgJavascript.src = "resources/images/javascript_2.png";
         divImgContainer.appendChild(imgJavascript);
 
@@ -211,22 +223,6 @@ var advert = (function()
           windowWidth = $(window).width();
           if(windowWidth <= 1540)
           {
-            //picture1.style.display = "none";
-            //picture2.style.display = "none";
-            /*divWordPressTitle.style.display = "none";
-            divHTML5Title.style.display = "none";
-            divCSS3Title.style.display = "none";
-            divJavascriptTitle.style.display = "none";
-            divJQueryTitle.style.display = "none";
-
-            imgWordpress.style.marginRight = "15px";
-            imgHTML5.style.marginRight = "15px";
-            imgCSS3.style.marginRight = "15px";
-            imgJavascript.style.marginRight = "15px";
-            imgJQuery.style.marginRight = "15px";*/
-
-            //divImgContainer.style.left = "34%";
-
             picture1.style.height = "315px";
             picture1.style.width = "360px";
             picture1.style.top = "360px;"
@@ -239,22 +235,12 @@ var advert = (function()
           }
           else if(windowWidth >= 1540)
           {
-            //picture1.style.display = "block";
-            //picture2.style.display = "block";
-            /*divWordPressTitle.style.display = "block";
-            divHTML5Title.style.display = "block";
-            divCSS3Title.style.display = "block";
-            divJavascriptTitle.style.display = "block";
-            divJQueryTitle.style.display = "block";
-
-            imgWordpress.style.marginRight = "158px";
-            imgHTML5.style.marginRight = "89px";
-            imgCSS3.style.marginRight = "79px";
-            imgJavascript.style.marginRight = "158px";
-            imgJQuery.style.marginRight = "0px";*/
-
+            divHeaderTitle.style.fontSize = "44px";
+            divCompanyTitle.style.fontSize = "26px";
+            divFooterTitle.style.fontSize = "26px";
             picture1.style.height = "630px";
             picture1.style.width = "710px";
+            picture1.style.top = "175px";
 
             adImages = true;
           }
@@ -266,6 +252,8 @@ var advert = (function()
             divCompanyTitle.style.fontSize = "26px";
             divFooterTitle.style.fontSize = "26px";
             picture1.style.top = "565px";
+            picture1.style.display = "block";
+            picture2.style.display = "block";
           }
 
           if(windowWidth <= 530)
@@ -274,21 +262,15 @@ var advert = (function()
             divCompanyTitle.style.fontSize = "16px";
             divFooterTitle.style.fontSize = "16px";
             picture1.style.top = "565px";
+            picture2.style.display = "none";
           }
 
           if(windowWidth <= 340)
           {
 
-            divImgContainer.style.left = "1%";
             divHeaderTitle.style.fontSize = "16px";
             divCompanyTitle.style.fontSize = "16px";
             divFooterTitle.style.fontSize = "16px";
-            picture1.style.top = "565px";
-            picture1.style.height = "315px";
-            picture1.style.width = "360px";
-
-            picture2.style.height = "270px";
-            picture2.style.width = "300px";
           }
     }
 

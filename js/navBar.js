@@ -9,7 +9,6 @@ var navbar = (function(id)
     var divWhatWeOffer = document.createElement("div");
     var divWhoWeAre = document.createElement("div");
     var divQualityOfService = document.createElement("div");
-    var divLogo = document.createElement("div");
     var mouseEntered = true;
 
     (function init()
@@ -33,10 +32,6 @@ var navbar = (function(id)
     {
         navBar.style.cssText = "width: 100%;position: absolute;top: 50px;z-index: 3;";
 
-        divLogo.style.cssText = "color: #FFF;cursor: pointer;font-size: 30px;position: absolute;z-index: 4; left: 60px;";
-        divLogo.innerHTML = "42";
-        navBar.appendChild(divLogo);
-
         navBarBackground.style.cssText = "background-color: #FFF;height: 0px;width: 100%;z-index: 2;position: absolute;";
         navBar.appendChild(navBarBackground);
 
@@ -45,20 +40,21 @@ var navbar = (function(id)
         $(divContactUs).addClass("divContactUsNavButton");
         navBar.appendChild(divContactUs);
 
-        divWhatWeOffer.style.cssText = "cursor: pointer;right: 275px;height: 40px;width: 180px;text-align: center;line-height: 38px;position: absolute;z-index: 4;";
-        divWhatWeOffer.innerHTML = "WHAT WE OFFER";
-        divWhatWeOffer.className = "navigateItemsNormal";
-        navBar.appendChild(divWhatWeOffer);
+        divQualityOfService.style.cssText = "cursor: pointer;right: 266px;height: 40px;width: 193px;text-align: center;line-height: 38px;position: absolute;z-index: 4;";
+        divQualityOfService.innerHTML = "THE QUALITY WE BRING";
+        divQualityOfService.className = "navigateItemsNormal";
+        navBar.appendChild(divQualityOfService);
 
-        divWhoWeAre.style.cssText = "cursor: pointer;right: 490px;height: 40px;width: 180px;text-align: center;line-height: 38px;position: absolute;z-index: 4;";
+        divWhoWeAre.style.cssText = "cursor: pointer;right: 610px;height: 40px;width: 180px;text-align: center;line-height: 38px;position: absolute;z-index: 4;";
         divWhoWeAre.innerHTML = "WHO WE ARE";
         divWhoWeAre.className = "navigateItemsNormal";
         navBar.appendChild(divWhoWeAre);
 
-        divQualityOfService.style.cssText = "cursor: pointer;right: 705px;height: 40px;width: 193px;text-align: center;line-height: 38px;position: absolute;z-index: 4;";
-        divQualityOfService.innerHTML = "THE QUALITY WE BRING";
-        divQualityOfService.className = "navigateItemsNormal";
-        navBar.appendChild(divQualityOfService);
+        divWhatWeOffer.style.cssText = "cursor: pointer;right: 462px;height: 40px;width: 180px;text-align: center;line-height: 38px;position: absolute;z-index: 4;";
+        divWhatWeOffer.innerHTML = "WHAT WE OFFER";
+        divWhatWeOffer.className = "navigateItemsNormal";
+        navBar.appendChild(divWhatWeOffer);
+
     }
 
     function animate_navigationBar()
@@ -85,7 +81,6 @@ var navbar = (function(id)
                     divWhoWeAre.className = "navigateItemsInMenu";
                     divQualityOfService.style.top = "-28px";
                     divQualityOfService.className = "navigateItemsInMenu";
-                    divLogo.style.color = "#8a959e"; divLogo.style.top = "-28px";
                 }
            }
            else
@@ -105,7 +100,6 @@ var navbar = (function(id)
                     divWhatWeOffer.className = "navigateItemsNormal";
                     divQualityOfService.className = "navigateItemsNormal";
                     divQualityOfService.style.top = "0px";
-                    divLogo.style.color = "#FFF"; divLogo.style.top = "-24px";
                 }
            }
 
